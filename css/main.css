@@ -78,10 +78,8 @@
     border-radius: 3px;
 }
 
-
-
-
-
-
+ion-header-bar {
+    background: red;
+}
 
 

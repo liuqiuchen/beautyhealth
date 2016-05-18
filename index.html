@@ -18,7 +18,7 @@
 
 <!-- 左侧边栏 开始 -->
 <script id="menu.html" type="text/ng-template">
-    <ion-side-menus>
+    <ion-side-menus style="overflow: hidden;">
 
         <ion-pane ion-side-menu-content>
             <ion-nav-bar class="bar-stable nav-title-slide-ios7">
@@ -27,7 +27,7 @@
             <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
         </ion-pane>
 
-        <ion-side-menu>
+        <ion-side-menu style="overflow: hidden;">
             <ion-content>
                 <!--slide_left_top 开始-->
                 <div id="slide_left_top">
@@ -75,25 +75,35 @@
 
 <!-- 中间主体内容 开始 -->
 <script id="playlists.html" type="text/ng-template">
-    <ion-nav-bar class="bar bar-header bar-positive">
-        <ion-view title="美妆健身">
-            <ion-nav-buttons side="left">
-                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-            </ion-nav-buttons>
+    <ion-view title="美妆健身" class="has-footer" style="text-align: center;">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-buttons>
 
-            <ion-content>
-                内容
-            </ion-content>
+        <!-- 内容 开始 -->
+        <ion-content>
+            <div class="lqc">内容</div>
+        </ion-content>
+        <!-- 内容 结束 -->
 
         </ion-view>
-    </ion-nav-bar>
+
 
 </script>
 <!-- 中间主体内容 结束 -->
 
+<script src="js/jquery-1.12.3.min.js"></script>
 <script src="js/ionic.bundle.min.js"></script>
 <script src="js/ionSlideMenu.js"></script>
 <script src="js/main.js"></script>
+<script>
+$(function () {
+
+    //alert($('.lqc').size());
+
+    $('ion-header-bar').addClass('bar-positive');
+});
+</script>
 
 
 </body>
