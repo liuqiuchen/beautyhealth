@@ -1,6 +1,6 @@
 ### beautyhealth
 
-### Ö÷Ò³
+### ä¸»é¡µ
 (http://liuqiuchen.github.io/beautyhealth/)[http://liuqiuchen.github.io/beautyhealth/]
 
 
