@@ -13,6 +13,7 @@
 }
 /*改变ionic默认样式 结束*/
 
+/*侧边栏 开始*/
 #slide_left_top {
     width: 276px;
     height: 150px;
@@ -78,8 +79,57 @@
     border-radius: 3px;
 }
 
-ion-header-bar {
-    background: red;
+.bar_positive_light {
+    border-top: 1px solid #387ef5;
 }
+
+/*内容 开始*/
+.cont {
+    display: none;
+}
+
+/*底部开始*/
+#myFooter .footer_nav_list {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+#myFooter .footer_nav_list li {
+    float: left;
+    margin-right: 30px;
+}
+
+#myFooter .footer_nav_list li:last-child {
+    margin-right: 0;
+}
+
+#myFooter .footer_nav_list li i.ion-icon {
+    font-size: 30px;
+    color: #387ef5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
