@@ -88,6 +88,10 @@
     display: none;
 }
 
+.cont1 {
+    display: block;
+}
+
 /*µ×²¿¿ªÊ¼*/
 #myFooter .footer_nav_list {
     width: auto;
