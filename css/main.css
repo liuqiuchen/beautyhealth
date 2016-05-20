@@ -90,6 +90,56 @@
 
 .cont1 {
     display: block;
+    padding-bottom: 30px;
+}
+
+/*第一页内容 开始*/
+.cont1 .item_cosmetics_divider {
+    padding: 0;
+    min-height: 6px;
+    height: 6px;
+    overflow: hidden;
+    background: orange;
+}
+
+.cont1 .cosmetics_pic {
+    width: 102px;
+    height: 102px;
+    float: left;
+}
+
+.cont1 .cosmetics_pic img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e9e9e9;
+    -webkit-box-shadow: 5px 5px 5px #dddddd;
+    -moz-box-shadow: 5px 5px 5px #dddddd;
+    box-shadow: 5px 5px 5px #dddddd;
+}
+
+.cont1 .skincare_describe {
+    float: left;
+    width: 60%;
+    margin-left: 30px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.cont1 .skincare_describe h1 {
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+}
+
+
+.cont1 .skincare_describe p:not(.skincare_price) {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.cont1 .skincare_describe p.skincare_price {
+    color: #ff9c7e;
+    margin-top: 5px;
 }
 
 /*底部开始*/

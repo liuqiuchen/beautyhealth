@@ -19,6 +19,13 @@ $(function () {
 		$('.cont' + ($(this).index() + 1)).fadeIn();
 	});
 
+	/**
+	 * Õº∆¨—”≥Ÿº”‘ÿ
+	 * */
+	$('img.lazy').lazyload({
+		effect: 'fadeIn'
+	});
+
 });
 
 
