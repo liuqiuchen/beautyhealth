@@ -11,6 +11,11 @@
 .bar .title {
     font-size: 16px;
 }
+
+/*去掉默认滚动条*/
+ion-content {
+    overflow: hidden;
+}
 /*改变ionic默认样式 结束*/
 
 /*侧边栏 开始*/
