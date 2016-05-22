@@ -9,14 +9,61 @@
     <!-- 把数字默认显示拨号链接去掉 -->
     <meta name="format-detection" content="telephone=no" />
     <title>登录</title>
+    <link rel="stylesheet" href="../css/ionic.min.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
 </head>
-<body>
+<body ng-app="starter" ng-controller="actionsheetCtl">
 
 
-登录
+<div class="bar bar-header bar-positive">
+    <div class="h1 title">登录</div>
+</div>
+
+<div class="content has-header">
+    <form action="" class="loginForm">
+        <div class="section_w">
+            <div class="section_tips">
+                <i class="icon ion-person ion-icon"></i>
+                <span class="tips_text">用户名：</span>
+            </div>
+            <div class="section_input">
+                <input type="text" value="" placeholder="请填写用户名" />
+            </div>
+        </div>
+        <div class="section_w">
+            <div class="section_tips">
+                <i class="icon ion-power ion-icon"></i>
+                <span class="tips_text">密码：</span>
+            </div>
+            <div class="section_input">
+                <input type="password" value="" placeholder="请填写密码" />
+            </div>
+        </div>
+
+        <div class="remember_pass">
+            <ion-content>
+                <ion-checkbox
+                        ng-repeat="item in devList"
+                        ng-checked="item.checked"
+                >
+                    {{item.text}}
+                </ion-checkbox>
+            </ion-content>
+        </div>
+
+        <div class="submit_btn">
+            <div class="button button-positive">
+                登录
+            </div>
+        </div>
+    </form>
+</div>
 
 
 
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script src="../js/ionic.bundle.min.js"></script>
+<script src="../js/ionLogin.js"></script>
 
 
 </body>
