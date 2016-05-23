@@ -27,7 +27,7 @@
                 <span class="tips_text">用户名：</span>
             </div>
             <div class="section_input">
-                <input type="text" value="" placeholder="请填写用户名" />
+                <input type="text" id="username" name="username" value="" placeholder="请填写用户名" />
             </div>
         </div>
         <div class="section_w">
@@ -36,7 +36,7 @@
                 <span class="tips_text">密码：</span>
             </div>
             <div class="section_input">
-                <input type="password" value="" placeholder="请填写密码" />
+                <input type="password" id="pass" name="pass" value="" placeholder="请填写密码" />
             </div>
         </div>
 
@@ -52,7 +52,7 @@
         </div>
 
         <div class="submit_btn">
-            <div class="button button-positive">
+            <div class="button button-positive" ng-click="showAlert()">
                 登录
             </div>
         </div>
@@ -60,10 +60,10 @@
 </div>
 
 
-
 <script src="../js/jquery-1.12.3.min.js"></script>
 <script src="../js/ionic.bundle.min.js"></script>
 <script src="../js/ionLogin.js"></script>
+<script src="../js/login.js"></script>
 
 
 </body>

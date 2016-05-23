@@ -38,6 +38,10 @@
     top: 10px;
 }
 
+.popup,.popup-title,.button {
+    font-family: 'Microsoft yahei';
+}
+
 /*修改ionic默认样式 结束*/
 
 .loginForm .section_w {
@@ -86,12 +90,17 @@
 .loginForm .submit_btn {
     margin: 100px 10% 0 10%;
     width: 100%;
-    height: 30px;
+    height: 40px;
+    overflow: hidden;
 }
 
 .loginForm .submit_btn .button {
     width: 80%;
-    height: 30px;
+    height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: 'Microsoft yahei';
 }
 
 
