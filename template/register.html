@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <!-- 强制使用webkit内核进行渲染 -->
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+    <!-- 移动端视口控制 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!-- 把数字默认显示拨号链接去掉 -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/ionic.min.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+    <style>
+        .loginForm .submit_btn {
+            margin: 50px 10% 0 10%;
+        }
+    </style>
+</head>
+<body ng-app="starter" ng-controller="actionsheetCtl">
+
+
+<div class="bar bar-header bar-positive">
+    <div class="h1 title">注册</div>
+</div>
+
+<div class="content has-header">
+    <form action="" class="loginForm" id="loginForm">
+        <div class="section_w">
+            <div class="section_tips">
+                <i class="icon ion-person ion-icon"></i>
+                <span class="tips_text">用户名：</span>
+            </div>
+            <div class="section_input">
+                <input type="text" id="username" name="username" value="" placeholder="请填写用户名" />
+            </div>
+        </div>
+        <div class="section_w">
+            <div class="section_tips">
+                <i class="icon ion-email ion-icon"></i>
+                <span class="tips_text">邮箱：</span>
+            </div>
+            <div class="section_input">
+                <input type="text" id="email" name="email" value="" placeholder="请填写注册邮箱" />
+            </div>
+        </div>
+        <div class="section_w">
+            <div class="section_tips">
+                <i class="icon ion-power ion-icon"></i>
+                <span class="tips_text">密码：</span>
+            </div>
+            <div class="section_input">
+                <input type="password" id="pass" name="pass" value="" placeholder="请填写密码" />
+            </div>
+        </div>
+
+        <div class="submit_btn">
+            <div class="button button-positive" ng-click="showAlert()">
+                注册
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script src="../js/ionic.bundle.min.js"></script>
+<script src="../js/register.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
