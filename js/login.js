@@ -11,6 +11,7 @@ angular.module('starter', ['ionic'])
 			 });*/
 
 			var username = $('#username');
+			var pass = $('#pass');
 
 			function alertTip(title, template) {
 				$ionicPopup.alert({
@@ -31,6 +32,17 @@ angular.module('starter', ['ionic'])
 			}else {
 				if($.trim(username.val()).length < 2 || $.trim(username.val()).length > 6) {
 					alertTip('提示信息', '用户名在2~6位之间！');
+				}else {
+					if($.trim(pass.val()) == '') {
+						alertTip('提示信息', '密码不得为空!');
+					}else {
+						if($.trim(pass.val()).length < 6 || $.trim(pass.val()).length > 16) {
+							alertTip('提示信息', '密码在6~16位之间!');
+						}else {
+							//$('#loginForm').submit();
+							alertTip('提示信息', '模拟登录成功');
+						}
+					}
 				}
 			}
 		};
