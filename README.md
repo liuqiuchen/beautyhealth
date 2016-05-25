@@ -9,4 +9,11 @@
 ### 主页
 http://liuqiuchen.github.io/beautyhealth/
 
+### 浏览模块
+* 主页
+* 搜索
+* 我的
+* 侧边栏注册
+* 侧边栏登录
+
 
